@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form wave animation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form action="#">
       <h1>Login</h1>
       <div class="fields-container">
-        <input name="login" type="text" required />
+        <input
+          name="login"
+          type="text"
+          required
+          title="Please fill out this field"
+        />
         <label for="login">Nickname</label>
       </div>
       <div class="fields-container">
-        <input name="password" type="password" required />
+        <input
+          name="password"
+          type="password"
+          required
+          title="Please fill out this field"
+        />
         <label for="password">Password</label>
       </div>
       <button class="btn">Login</button>
-      <p>Don't have an account? <a href="#">Register</a></p>
+      <p>Don't have an account? <a class="register" href="#">Register</a></p>
     </form>
   </body>
 </html>
