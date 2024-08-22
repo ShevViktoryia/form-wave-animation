@@ -84,3 +84,13 @@ h1 {
 form p {
   cursor: default;
 }
+
+.fields-container label span {
+  display: inline-block;
+  transition: 0.3s ease-in;
+}
+
+.fields-container input:focus + label span,
+.fields-container input:valid + label span {
+  transform: translateY(-15px);
+}
